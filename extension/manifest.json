@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Auth Header Extractor",
+  "description": "This extension extracts the auth header from a specific API call",
+  "version": "1.0",
+  "permissions": [
+    "storage", "webRequest"
+  ],
+  "host_permissions": [
+    "*://alpha.uipath.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
